@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .login-container {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      width: 320px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      background: #0ea5e9;
+    }
+
+    .extra {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    .extra a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="extra">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
